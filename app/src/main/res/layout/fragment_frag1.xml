@@ -17,13 +17,13 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:text='The word "queue" is the only word in the English language that is still pronounced the same way when the last four letters are removed.' />
+            android:text="The word 'queue' is the only word in the English language that is still pronounced the same way when the last four letters are removed."/>
 
         <Button
             android:id="@+id/btn_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Change Color" />
+            android:text="Change Color" />
     </LinearLayout>
 
 </FrameLayout>

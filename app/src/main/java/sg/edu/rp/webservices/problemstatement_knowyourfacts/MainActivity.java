@@ -1,6 +1,5 @@
 package sg.edu.rp.webservices.problemstatement_knowyourfacts;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlarmManager;
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.action_previous){
             if(vPager.getCurrentItem() > 0){
                 vPager.setCurrentItem(vPager.getCurrentItem() - 1, true);
@@ -90,18 +89,18 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onPause() {
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("page", vPager.getCurrentItem());
-        editor.commit();
-        super.onPause();
-    }
-
-    @Override
-    protected void onPostResume() {
-        int page = sp.getInt("page", 1);
-        vPager.setCurrentItem(page);
-        super.onPostResume();
-    }
+//    @Override
+//    protected void onPause() {
+//        SharedPreferences.Editor editor = sp.edit();
+//        editor.putInt("page", vPager.getCurrentItem());
+//        editor.commit();
+//        super.onPause();
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        int page = sp.getInt("page", 1);
+//        vPager.setCurrentItem(page);
+//        super.onResume();
+//    }
 }

@@ -15,16 +15,15 @@
             android:id="@+id/frag3_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hello_blank_fragment"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:text='What is called a "French kiss" in the English speaking world is known as an "English kiss" in France.' />
+            android:text='What is called a "French kiss" in the English speaking world is known as an "English kiss" in France.' />
 
         <Button
             android:id="@+id/btn_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Change Color" />
+            android:text="Change Color" />
     </LinearLayout>
 
 </FrameLayout>
