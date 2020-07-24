@@ -1,5 +1,6 @@
 package sg.edu.rp.webservices.problemstatement_knowyourfacts;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -30,7 +31,7 @@ public class Frag1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        v =  inflater.inflate(R.layout.fragment_frag1, container, false);
+        View v =  inflater.inflate(R.layout.fragment_frag1, container, false);
 
         Button btnColor = (Button) v.findViewById(R.id.btn_color);
 
@@ -38,8 +39,11 @@ public class Frag1 extends Fragment {
             @Override
             public void onClick(View v) {
                 Random random = new Random();
+                v.setBackgroundColor(Color.RED);
+                Color.rgb(random.nextInt(256), random.nextInt(256), random.nextInt(256));
             }
         });
+        return v;
 
     }
 }
