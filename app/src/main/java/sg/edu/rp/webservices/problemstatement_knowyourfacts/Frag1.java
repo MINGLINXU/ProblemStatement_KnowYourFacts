@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.Random;
 
@@ -34,6 +37,10 @@ public class Frag1 extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_frag1, container, false);
 
         Button btnColor = (Button) v.findViewById(R.id.btn_color);
+        ImageView iv = (ImageView) v.findViewById(R.id.iv);
+
+        String imageUrl = "https://i.imgur.com/tGbaZCY.jpg";
+        Picasso.with(getActivity()).load(imageUrl).into(iv);
 
         btnColor.setOnClickListener(new View.OnClickListener() {
             @Override

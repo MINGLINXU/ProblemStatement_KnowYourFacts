@@ -11,6 +11,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
         <TextView
             android:id="@+id/frag1_tv"
             android:layout_width="match_parent"
